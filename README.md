@@ -48,4 +48,4 @@ Code and test your solutions in `index.js`. Customer data is available to you in
 
 Remember, in the node.js environment, you can both `console.log()` or use the dubugger to step through your code and inspect your work.
 
-To see your console.logs printed out, enter `node index.js` in your terminal.
+Test your work by running `npm start` in your terminal!
