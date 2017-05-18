@@ -27,7 +27,7 @@ An exercise in problem solving in the functional idiom.
 
 Code and test your solutions in `index.js`. Customer data is available to you in the Array, `customers`. Utilizing your lodown library, write functions that take the Array of customers and return the following:
 
-1. number of males.
+1. number of males
 2. number of females
 3. oldest customer
 4. youngest customer
@@ -47,3 +47,5 @@ Code and test your solutions in `index.js`. Customer data is available to you in
 ```
 
 Remember, in the node.js environment, you can both `console.log()` or use the dubugger to step through your code and inspect your work.
+
+To see your console.logs printed out, enter `node index.js` in your terminal.
