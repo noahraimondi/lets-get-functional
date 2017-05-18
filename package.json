@@ -1,13 +1,30 @@
 {
-  "name": "index",
-  "private": true,
-  "version": "0.0.0",
-  "dependencies": {
-      "chai": "~1.8.0",
-      "mocha":"2.0.1"
+  "name": "lets-get-functional",
+  "version": "1.0.0",
+  "description": "Getting jiggy with higher order functions",
+  "main": "data.js",
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha ./spec/index.spec.js"
+    "test": "mocha ./test/index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OperationSpark/lets-get-functional.git"
+  },
+  "author": "jfraboni",
+  "license": "CC",
+  "bugs": {
+    "url": "https://github.com/OperationSpark/lets-get-functional/issues"
+  },
+  "homepage": "https://github.com/OperationSpark/lets-get-functional",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "lodash": "^4.17.4",
+    "sinon": "^2.2.0",
+    "chai": "~1.8.0",
+    "mocha":"2.0.1"
   }
 }
