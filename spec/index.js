@@ -169,6 +169,28 @@ describe('friendFirstLetterCount()', function () {
 
 // TODO: Find out what the friends thing is asking for
 
+describe('friendsCount()', function () {
+  'use strict';
+
+  const friendsCount = index.friendsCount;
+
+  it('is a function', function () {
+    expect(friendsCount).to.be.a('function');
+  });
+
+  it('should return an array', function () {
+    const test = friendsCount(data);
+    const result = Array.isArray(test);
+    expect(result).to.be.true;
+  });
+
+  it('should find all customers that are friends', function () {
+    const result = friendsCount(data).sort();
+    const friends =  [ 'Buckner Kennedy', 'Doyle Erickson', 'Olga Newton', 'Shelly Walton' ];
+    expect(result).to.eql(friends);
+  });
+});
+
 describe('topThreeTags()', function () {
   'use strict';
 
