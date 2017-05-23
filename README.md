@@ -25,31 +25,76 @@ An exercise in problem solving in the functional idiom.
 
 ## Solve
 
-Code and test your solutions in `index.js`. Customer data is available to you in the Array, `customers`. Utilizing your lodown library, write functions that take the Array of customers and return the following:
+- Code and test your solutions in `index.js`.
+- Customer data is available to you in the Array, `customers`.
+- Utilizing your `lodown` library and the `customers` Array, write the following functions:
 
-Function: maleCount
-Objective: Find the number of male customers
-Input: array
-Output: number
-Constraints: use filter
+### maleCount
+- Objective: Find the number of male customers
+- Input: array
+- Output: number
+- Constraints: use filter
 
-Function: femaleCount
-Objective: Find the number of female customers
-Input: array
-Output: number
-Constraints: use reduce
+### femaleCount
+- Objective: Find the number of female customers
+- Input: array
+- Output: number
+- Constraints: use reduce
 
-Function: oldestCustomer
-Objective: Find the oldest customer's name
-Input: array
-Output: string
-Constraints:
+### oldestCustomer
+- Objective: Find the oldest customer's name
+- Input: array
+- Output: string
+- Constraints:
 
-Function: youngestCustomer
-Objective: Find the youngest customer's name
-Input: array
-Output: string
-Constraints:
+### youngestCustomer
+- Objective: Find the youngest customer's name
+- Input: array
+- Output: string
+- Constraints:
+
+### averageBalance
+- Objective: Find the average balance of all customers
+- Input: array
+- Output: number
+- Constraints:
+
+### firstLetterCount
+- Objective:
+- Input: array, letter
+- Output: number
+- Constraints:
+
+### friendFirstLetterCount
+- Objective:
+- Input: array, name, letter
+- Output: number
+- Constraints:
+
+### friendsCount
+- Objective:
+- Input:
+- Output:
+- Constraints:
+
+### topThreeTags
+- Objective:
+- Input:
+- Output:
+- Constraints:
+
+### genderCount
+- Objective:
+```javascript
+{
+    male: 3,
+    female: 4,
+    transgender: 1
+}
+```
+- Input: array
+- Output: object
+- Constraints:
 
 1. number of males
 2. number of females
