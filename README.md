@@ -27,6 +27,30 @@ An exercise in problem solving in the functional idiom.
 
 Code and test your solutions in `index.js`. Customer data is available to you in the Array, `customers`. Utilizing your lodown library, write functions that take the Array of customers and return the following:
 
+Function: maleCount
+Objective: Find the number of male customers
+Input: array
+Output: number
+Constraints: use filter
+
+Function: femaleCount
+Objective: Find the number of female customers
+Input: array
+Output: number
+Constraints: use reduce
+
+Function: oldest
+Objective: Find the oldest customer's name
+Input: array
+Output: string
+Constraints:
+
+Function: youngest
+Objective: Find the youngest customer's name
+Input: array
+Output: string
+Constraints: 
+
 1. number of males
 2. number of females
 3. oldest customer

@@ -1,7 +1,7 @@
 const path = require('path');
 const data = require('../data/customers.json');
 const expect = require('chai').expect;
-const index = require(path.join(__dirname, '..', './index.js'));
+const index = require(path.join(__dirname, '..', '.master/index.js'));
 
 describe('maleCount()', function () {
   'use strict';
@@ -206,9 +206,13 @@ describe('topThreeTags()', function () {
     expect(result).to.be.true;
   });
 
+  // TODO: fix this test vvv
+
   it('should find three of the top tags', function () {
+    let tags = 0;
     const result = topThreeTags(data).sort();
-    const topTags = [ 'Lorem', 'aliqua', 'veniam' ];
+    const topTags = [ 'Lorem', 'aliqua', 'veniam', 'ea', 'aute' ];
+
     expect(result).to.eql(topTags);
   });
 });

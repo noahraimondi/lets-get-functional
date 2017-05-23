@@ -2,7 +2,7 @@
   "name": "lets-get-functional",
   "version": "1.0.0",
   "description": "Getting jiggy with higher order functions",
-  "main": "data.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
