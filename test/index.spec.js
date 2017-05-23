@@ -39,17 +39,17 @@ describe('femaleCount()', function () {
   });
 });
 
-describe('oldest()', function () {
+describe('oldestCustomer()', function () {
   'use strict';
 
-  const oldest = index.oldest;
+  const oldestCustomer = index.oldestCustomer;
 
   it('is a function', function () {
-    expect(oldest).to.be.a('function');
+    expect(oldestCustomer).to.be.a('function');
   });
 
   it('should return a string', function () {
-    expect(oldest(data)).to.be.a('string');
+    expect(oldestCustomer(data)).to.be.a('string');
   });
 
   it('should find oldest customer name', function () {
@@ -57,21 +57,21 @@ describe('oldest()', function () {
   });
 });
 
-describe('youngest()', function () {
+describe('youngestCustomer()', function () {
   'use strict';
 
-  const youngest = index.youngest;
+  const youngestCustomer = index.youngestCustomer;
 
   it('is a function', function () {
-    expect(youngest).to.be.a('function');
+    expect(youngestCustomer).to.be.a('function');
   });
 
   it('should return a string', function () {
-    expect(youngest(data)).to.be.a('string');
+    expect(youngestCustomer(data)).to.be.a('string');
   });
 
   it('should find youngest customer name', function () {
-    expect(youngest(data)).to.equal('Doyle Erickson');
+    expect(youngestCustomer(data)).to.equal('Doyle Erickson');
   });
 });
 
