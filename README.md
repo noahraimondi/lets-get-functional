@@ -29,62 +29,62 @@ An exercise in problem solving in the functional idiom.
 - Customer data is available to you in the Array, `customers`.
 - Utilizing your `lodown` library and the `customers` Array, write the following functions:
 
-### maleCount
+### 1: `maleCount`
 - Objective: Find the number of male customers
-- Input: array
-- Output: number
+- Input: Array
+- Output: Number
 - Constraints: use filter
 
-### femaleCount
+### 2: `femaleCount`
 - Objective: Find the number of female customers
-- Input: array
-- Output: number
+- Input: Array
+- Output: Number
 - Constraints: use reduce
 
-### oldestCustomer
+### 3: `oldestCustomer`
 - Objective: Find the oldest customer's name
-- Input: array
-- Output: string
+- Input: Array
+- Output: String
 - Constraints:
 
-### youngestCustomer
+### 4: `youngestCustomer`
 - Objective: Find the youngest customer's name
-- Input: array
-- Output: string
+- Input: Array
+- Output: String
 - Constraints:
 
-### averageBalance
+### 5: `averageBalance`
 - Objective: Find the average balance of all customers
-- Input: array
-- Output: number
+- Input: Array
+- Output: Number
 - Constraints:
 
-### firstLetterCount
-- Objective:
-- Input: array, letter
-- Output: number
+### 6: `firstLetterCount`
+- Objective: Find how many customer's names begin with a given letter
+- Input: Array, letter
+- Output: Number
 - Constraints:
 
-### friendFirstLetterCount
-- Objective:
-- Input: array, name, letter
-- Output: number
+### 7: `friendFirstLetterCount`
+- Objective: Find how many friends of a given customer have names that start with a given letter
+- Input: Array, Customer, Letter
+- Output: Number
 - Constraints:
 
-### friendsCount
-- Objective:
-- Input:
+### 8: `friendsCount`
+- Objective: how many customers are friends
+- Input: Array
 - Output:
 - Constraints:
 
-### topThreeTags
-- Objective:
-- Input:
-- Output:
+### 9: `topThreeTags`
+- Objective: Find the most common tags among all customers associated tags
+- Input: Array
+- Output: Array
 - Constraints:
 
-### genderCount
-- Objective:
+### 10: `genderCount`
+- Objective: Create a summary of genders, the output should be:
 ```javascript
 {
     male: 3,
@@ -92,9 +92,9 @@ An exercise in problem solving in the functional idiom.
     transgender: 1
 }
 ```
-- Input: array
-- Output: object
-- Constraints:
+- Input: Array
+- Output: Object
+- Constraints: Use reduce
 
 1. number of males
 2. number of females

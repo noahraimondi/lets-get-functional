@@ -53,7 +53,7 @@ describe('oldestCustomer()', function () {
   });
 
   it('should find oldest customer name', function () {
-    expect(oldest(data)).to.equal('Buckner Kennedy');
+    expect(oldestCustomer(data)).to.equal('Buckner Kennedy');
   });
 });
 
