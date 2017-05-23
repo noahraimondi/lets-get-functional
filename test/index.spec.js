@@ -211,7 +211,7 @@ describe('topThreeTags()', function () {
   it('should find three of the top tags', function () {
     let tags = 0;
     const result = topThreeTags(data).sort();
-    const topTags = [ 'Lorem', 'aliqua', 'veniam', 'ea', 'aute' ];
+    const topTags = [ 'Lorem', 'aliqua', 'veniam', ];
 
     expect(result).to.eql(topTags);
   });
