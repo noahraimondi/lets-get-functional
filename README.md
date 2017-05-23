@@ -39,17 +39,17 @@ Input: array
 Output: number
 Constraints: use reduce
 
-Function: oldest
+Function: oldestCustomer
 Objective: Find the oldest customer's name
 Input: array
 Output: string
 Constraints:
 
-Function: youngest
+Function: youngestCustomer
 Objective: Find the youngest customer's name
 Input: array
 Output: string
-Constraints: 
+Constraints:
 
 1. number of males
 2. number of females

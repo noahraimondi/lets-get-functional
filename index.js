@@ -20,11 +20,11 @@ const femaleCount = function(array) {
 
 };
 
-const oldest = function(array) {
+const oldestCustomer = function(array) {
 
 };
 
-const youngest = function(array) {
+const youngestCustomer = function(array) {
 
 };
 
@@ -61,8 +61,8 @@ if((typeof process !== 'undefined') &&
     // here, export any references you need for tests //
     module.exports.maleCount = maleCount;
     module.exports.femaleCount = femaleCount;
-    module.exports.oldest = oldest;
-    module.exports.youngest = youngest;
+    module.exports.oldestCustomer = oldestCustomer;
+    module.exports.youngestCustomer = youngestCustomer;
     module.exports.averageBalance = averageBalance;
     module.exports.firstLetterCount = firstLetterCount;
     module.exports.friendFirstLetterCount = friendFirstLetterCount;
