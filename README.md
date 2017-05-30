@@ -61,7 +61,7 @@ An exercise in problem solving in the functional idiom.
 
 ### 6: `firstLetterCount`
 - Objective: Find how many customer's names begin with a given letter
-- Input: Array, letter
+- Input: Array, Letter
 - Output: Number
 - Constraints:
 
@@ -72,13 +72,13 @@ An exercise in problem solving in the functional idiom.
 - Constraints:
 
 ### 8: `friendsCount`
-- Objective: how many customers are friends
-- Input: Array
-- Output:
+- Objective: Find the customers' names that have a given customer's name in their friends list
+- Input: Array, Name
+- Output: Array
 - Constraints:
 
 ### 9: `topThreeTags`
-- Objective: Find the most common tags among all customers associated tags
+- Objective: Find the three most common tags among all customers' associated tags
 - Input: Array
 - Output: Array
 - Constraints:

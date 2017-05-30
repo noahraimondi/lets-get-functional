@@ -184,9 +184,33 @@ describe('friendsCount()', function () {
     expect(result).to.be.true;
   });
 
-  it('should find all customers that are friends', function () {
-    const result = friendsCount(data).sort();
-    const friends =  [ 'Buckner Kennedy', 'Doyle Erickson', 'Olga Newton', 'Shelly Walton' ];
+  // it('should find all customers that are friends', function () {
+  //   const result = friendsCount(data).sort();
+  //   const friends =  [ 'Buckner Kennedy', 'Doyle Erickson', 'Olga Newton', 'Shelly Walton' ];
+  //   expect(result).to.eql(friends);
+  // });
+
+  it('should find all customers that are friends with Olga Newton', function () {
+    const result = friendsCount(data, 'Olga Newton').sort();
+    const friends =  [ 'Doris Smith', 'Doyle Erickson' ];
+    expect(result).to.eql(friends);
+  });
+
+  it('should find all customers that are friends with Doyle Erickson', function () {
+    const result = friendsCount(data, 'Doyle Erickson').sort();
+    const friends =  [ 'Buckner Kennedy' ];
+    expect(result).to.eql(friends);
+  });
+
+  it('should find all customers that are friends with Bucker Kennedy', function () {
+    const result = friendsCount(data, 'Buckner Kennedy').sort();
+    const friends =  [ 'Doris Smith' ];
+    expect(result).to.eql(friends);
+  });
+
+  it('should find all customers that are friends with Shelly Walton', function () {
+    const result = friendsCount(data, 'Shelly Walton').sort();
+    const friends =  [ 'Olga Newton' ];
     expect(result).to.eql(friends);
   });
 });
@@ -206,12 +230,10 @@ describe('topThreeTags()', function () {
     expect(result).to.be.true;
   });
 
-  // TODO: fix this test vvv
-
   it('should find three of the top tags', function () {
     let tags = 0;
     const result = topThreeTags(data).sort();
-    const topTags = [ 'Lorem', 'aliqua', 'veniam', ];
+    const topTags = [ 'Lorem', 'aliqua', 'veniam' ];
 
     expect(result).to.eql(topTags);
   });
