@@ -10,45 +10,11 @@ const customers = require("./data/customers.json");
  *    name with which you published your npm lodown project.
  *
  * 2. Solve all problems as outlined in the README.
+ *
+ * 3. We made the first one for you as an example! Make the rest in this style:
  */
 
 const maleCount = function(array) {
-
-};
-
-const femaleCount = function(array) {
-
-};
-
-const oldestCustomer = function(array) {
-
-};
-
-const youngestCustomer = function(array) {
-
-};
-
-const averageBalance = function(array) {
-
-};
-
-const firstLetterCount = function(array, letter) {
-
-};
-
-const friendFirstLetterCount = function(array, name, letter) {
-
-};
-
-const friendsCount = function(array) {
-
-};
-
-const topThreeTags = function(array) {
-
-};
-
-const genderCount = function(array) {
 
 };
 

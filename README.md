@@ -25,9 +25,11 @@ An exercise in problem solving in the functional idiom.
 
 ## Solve
 
-- Code and test your solutions in `index.js`.
-- Customer data is available to you in the Array, `customers`.
-- Utilizing your `lodown` library and the `customers` Array, write the following functions:
+- Code and test your solutions in `index.js`
+- Customer data is available to you in the Array, `customers`
+- Utilizing your `lodown` library and the `customers` Array, write the functions outlined below
+- In the node.js environment you can both `console.log()` OR use the debugger to step through your code and inspect your work
+- Test your code by running `node index.js` in the terminal
 
 ### 1: `maleCount`
 - Objective: Find the number of male customers
@@ -95,26 +97,3 @@ An exercise in problem solving in the functional idiom.
 - Input: Array
 - Output: Object
 - Constraints: Use reduce
-
-1. number of males
-2. number of females
-3. oldest customer
-4. youngest customer
-5. average balance
-6. how many customer's names begin with some letter
-7. how many customer's friend's names begin with some letter
-8. how many customers are friends
-9. users have tags associated with them: find the top 3 most common tags
-10. create a summary of genders, the output should be:
-
-```javascript
-{
-    male: 3,
-    female: 4,
-    transgender: 1
-}
-```
-
-Remember, in the node.js environment, you can both `console.log()` or use the dubugger to step through your code and inspect your work.
-
-Test your work by running `npm start` in your terminal!
