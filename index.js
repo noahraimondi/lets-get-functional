@@ -3,7 +3,7 @@
 'use strict';
 
 const customers = require('./data/customers.json');
-const _ = require('phrush-lodown');
+const _ = require('');
 
 /**
  * 1. Import your lodown module using the require() method,

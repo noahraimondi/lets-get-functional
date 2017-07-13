@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "browserify ./spec/index.spec.js -o ./spec/bundle.spec.js",
+    "download": "npm install --save lodown-FIX_ME",
+    "build": "npm run download && browserify ./spec/index.spec.js -o ./spec/bundle.spec.js",
     "test": "mocha ./test/index.spec.js"
   },
   "repository": {
