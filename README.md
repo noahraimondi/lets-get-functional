@@ -29,60 +29,60 @@ An exercise in problem solving in the functional idiom.
 - Customer data is available to you in the Array, `customers`
 - Utilizing your `lodown` library and the `customers` Array, write the functions outlined below
 - In the node.js environment you can both `console.log()` OR use the debugger to step through your code and inspect your work
-- Test your code by running `node index.js` in the terminal
+- Test your code by running `npm start` in the terminal
 
 ### 1: `maleCount`
 - Objective: Find the number of male customers
-- Input: Array
-- Output: Number
-- Constraints: use filter
+- Input: `Array`
+- Output: `Number`
+- Constraints: use `filter`
 
 ### 2: `femaleCount`
 - Objective: Find the number of female customers
-- Input: Array
-- Output: Number
-- Constraints: use reduce
+- Input: `Array`
+- Output: `Number`
+- Constraints: use `reduce`
 
 ### 3: `oldestCustomer`
 - Objective: Find the oldest customer's name
-- Input: Array
-- Output: String
+- Input: `Array`
+- Output: `String`
 - Constraints:
 
 ### 4: `youngestCustomer`
 - Objective: Find the youngest customer's name
-- Input: Array
-- Output: String
+- Input: `Array`
+- Output: `String`
 - Constraints:
 
 ### 5: `averageBalance`
 - Objective: Find the average balance of all customers
-- Input: Array
-- Output: Number
+- Input: `Array`
+- Output: `Number`
 - Constraints:
 
 ### 6: `firstLetterCount`
 - Objective: Find how many customer's names begin with a given letter
-- Input: Array, Letter
-- Output: Number
+- Input: `Array`, `Letter`
+- Output: `Number`
 - Constraints:
 
 ### 7: `friendFirstLetterCount`
 - Objective: Find how many friends of a given customer have names that start with a given letter
-- Input: Array, Customer, Letter
-- Output: Number
+- Input: `Array`, `Customer`, `Letter`
+- Output: `Number`
 - Constraints:
 
 ### 8: `friendsCount`
 - Objective: Find the customers' names that have a given customer's name in their friends list
-- Input: Array, Name
-- Output: Array
+- Input: `Array`, `Name`
+- Output: `Array`
 - Constraints:
 
 ### 9: `topThreeTags`
 - Objective: Find the three most common tags among all customers' associated tags
-- Input: Array
-- Output: Array
+- Input: `Array`
+- Output: `Array`
 - Constraints:
 
 ### 10: `genderCount`
@@ -94,6 +94,6 @@ An exercise in problem solving in the functional idiom.
     transgender: 1
 }
 ```
-- Input: Array
-- Output: Object
-- Constraints: Use reduce
+- Input: `Array`
+- Output: `Object`
+- Constraints: Use `reduce`

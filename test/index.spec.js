@@ -1,7 +1,7 @@
 const path = require('path');
 const data = require('../data/customers.json');
 const expect = require('chai').expect;
-const index = require(path.join(__dirname, '..', '.master/index.js'));
+const index = require('../index.js');
 
 describe('maleCount()', function () {
   'use strict';

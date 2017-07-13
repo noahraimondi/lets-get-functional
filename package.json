@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "build": "browserify ./spec/index.spec.js -o ./spec/bundle.spec.js",
     "test": "mocha ./test/index.spec.js"
   },
   "repository": {
