@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "download": "npm install --save lodown-FIX_ME",
+    "download": "npm install",
     "build": "npm run download && browserify ./spec/index.spec.js -o ./spec/bundle.spec.js",
     "test": "mocha ./test/index.spec.js"
   },
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/OperationSpark/lets-get-functional",
   "devDependencies": {
+    "chai": "^3.5.0",
     "istanbul": "^0.4.5",
     "lodash": "^4.17.4",
-    "sinon": "^2.2.0",
-    "chai": "~1.8.0",
-    "mocha":"2.0.1"
+    "mocha": "^3.4.1",
+    "sinon": "^2.2.0"
   }
 }
