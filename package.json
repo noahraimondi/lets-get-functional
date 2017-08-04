@@ -7,9 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node index.js",
-    "download": "npm install",
-    "build": "npm run download && browserify ./spec/index.spec.js -o ./spec/bundle.spec.js",
+    "start": "npm i && watchify ./spec/index.spec.js -o ./spec/bundle.spec.js",
     "test": "mocha ./test/index.spec.js"
   },
   "repository": {
