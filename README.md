@@ -10,9 +10,9 @@ An exercise in problem solving in the functional idiom.
 ## Step 1 - Setup
  - Run `os install` to install `Lets Get Functional`
  - Run `os npm` to install your `lodown` library
-  - Select Bootcamp
-  - Select Lets Get Functional
-  - Input your lodown package name, something like `lodown-<your-username>`
+   - Select Bootcamp
+   - Select Lets Get Functional
+   - Input your lodown package name, something like `lodown-<your-username>`
  - Run `os start` for Lets Get Functional
  - Open `index.html`
  - Open `index.js`
