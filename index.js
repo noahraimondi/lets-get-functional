@@ -12,9 +12,11 @@ const _ = require('');
  *
  * 2. Solve all problems as outlined in the README.
  *
- * 3. We started the first one for you as an example! Make the rest in this style:
+ * 3. We started the first one for you as an example! Make the rest in that style.
  * 
- * 4. To test your work, run `npm start --prefix ./projects/lets-get-functional` in your terminal.
+ * 4. To test your work, run the following command in your terminal:
+ * 
+ *    npm start --prefix ./projects/lets-get-functional
  */
 
 var maleCount = function(array) {
