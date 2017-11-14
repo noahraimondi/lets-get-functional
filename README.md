@@ -9,15 +9,16 @@ An exercise in problem solving in the functional idiom.
 
 ## Step 1 - Setup
  - Run `os install` to install `Lets Get Functional`
- - Copy the name of your `lodown`package. It should be something like `lodown-<your-username>`
- - In your bash terminal run the command `npm install --global lodown-<your-username>`
- - In your bash terminal run the command `npm link lodown-<your-username>`
+ - Copy the name of your `lodown`package. It should be something like `lodown-oliviasaborush`
+ - In your bash terminal run the command `npm install --global lodown-oliviasaborush` with **your** lodown package
+ - In your bash terminal run the command `npm link lodown-oliviasaborush` with **your** lodown package
+    - These commands will not work unless you use **your** lodown name 
  - Open `index.js`
  - Update line 6 of `index.js` to reference your `lodown` library
  - It should look something like this:
 
 ```
-const _ = require('');
+const _ = require('lodown-oliviasaborush');
 ```
 
 ## Step 2 - Solve
