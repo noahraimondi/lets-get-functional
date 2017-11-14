@@ -87,7 +87,7 @@
   "registered": "2014-11-15T07:22:23 +06:00",
   "latitude": 70.637542,
   "longitude": 38.023956,
-  "tags": ["laborum", "esse", "occaecat", "id", "ea", "non", "ea"],
+  "tags": ["laborum", "esse", "occaecat", "id", "ea", "non"],
   "friends": [{
     "id": 0,
     "name": "Cheryl Kent"
@@ -227,7 +227,7 @@
   "registered": "2015-03-05T19:47:37 +06:00",
   "latitude": 72.253186,
   "longitude": -23.777045,
-  "tags": ["dolore", "Lorem", "velit", "pariatur", "aliqua", "veniam", "aute"],
+  "tags": ["dolore", "Lorem", "velit", "pariatur", "aliqua", "veniam"],
   "friends": [{
     "id": 0,
     "name": "Torres Nguyen"
