@@ -25,7 +25,7 @@ const _ = require('lodown-oliviasaborush');
  - Implement the functions outlined below, using your `lodown` library
  - Code and test your solutions in `index.js`
  - Data is available to you in an Array stored in the variable `customers`
- - To test your solutions run `npm start --prefix ./projects/lets-get-functional` in your terminal
+ - To test your solutions run `npm start --prefix ./projects/let-s-get-functional` in your terminal
 
 ### 1: `maleCount`
  - **Objective**: Find the number of male customers
