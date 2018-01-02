@@ -16,7 +16,7 @@ var _ = require(/* Replace this with the name of your lodown! */);
  * 
  * 4. To test your work, run the following command in your terminal:
  * 
- *    npm start --prefix ./projects/lets-get-functional
+ *    npm start --prefix ./projects/let-s-get-functional
  */
 
 var maleCount = function(array) {
