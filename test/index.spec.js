@@ -85,7 +85,7 @@ describe('Let\'s Get Functional', function(){
       expect(averageBalance).to.be.a('function');
     });
 
-    it('should return a string', function () {
+    it('should return a number', function () {
       expect(averageBalance(data)).to.be.a('number');
     });
 
