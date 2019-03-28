@@ -105,7 +105,7 @@ describe('Let\'s Get Functional', function(){
       expect(firstLetterCount).to.be.a('function');
     });
 
-    it('should return a string', function () {
+    it('should return a number', function () {
       const result = firstLetterCount(data, 'B');
       expect(result).to.be.a('number');
     });
@@ -141,7 +141,7 @@ describe('Let\'s Get Functional', function(){
       expect(friendFirstLetterCount).to.be.a('function');
     });
 
-    it('should return a string', function () {
+    it('should return a number', function () {
       const result = friendFirstLetterCount(data, 'Doris Smith', 'B');
       expect(result).to.be.a('number');
     });
