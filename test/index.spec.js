@@ -256,7 +256,7 @@ describe('Let\'s Get Functional', function(){
 
     it('should return a summary of customer genders', function () {
       const result = genderCount(data);
-      const real = { female: 4, male: 3, transgender: 1 };
+      const real = { female: 4, male: 3, 'non-binary': 1 };
       expect(result).to.eql(real);
     });
   });
