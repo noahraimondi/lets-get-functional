@@ -88,7 +88,7 @@ const _ = require('lodown-oliviasaborush');
 {
     male: 3,
     female: 4,
-    transgender: 1
+    non-binary: 1
 }
 ```
  - **Input**: `Array`
