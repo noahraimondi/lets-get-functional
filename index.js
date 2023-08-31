@@ -3,7 +3,7 @@
 'use strict';
 
 var customers = require('./data/customers.json');
-var _ = require(/* Replace this with the name of your lodown! */);
+var _ = require("underpants-noahraimondi");
 
 /**
  * 1. Import your lodown module using the require() method,
@@ -22,16 +22,59 @@ var _ = require(/* Replace this with the name of your lodown! */);
  */
 
 var maleCount = function(array) {
+    let select = _.filter(array, function(customers){ return customers.gender === "male"}).length
+    return select;
+};
+
+var femaleCount = function(array) {
+    let select = _.filter(array, function(customers){ return customers.gender === "female"}).length
+    return select;
+};
+
+var oldestCustomer = function(array){
+    let eldest = _.reduce(array, function(cur, customer){
+        //compare age of cur and customer and if customer is older than cur reasign cur to customer
+        if (cur.age < customer.age){
+            cur = customer
+        }
+        return cur
+    })
+    return eldest.name
+};
+
+var youngestCustomer = function(array){
+    let result = _.reduce(array, function (cur, customer) {
+        // compare the age of cur and customer , if customer age is > cur
+        // than reassign cur to customer
+        if (cur.age > customer.age) {
+          cur = customer
+        }
+    
+        return cur
+      })
+    
+      return result.name
 
 };
 
-var femaleCount;
-
-var oldestCustomer;
-
-var youngestCustomer;
-
-var averageBalance;
+var averageBalance = function (array){
+    // make var for the sum
+    // get each value from the customer balance
+    //remove the $ from the balance value and convert from a string
+    //add bal to the sum var
+    //divide the balance by the amount customer, customer.length and return the result
+    let nums = _.map(array, function(customer){
+        let bal = customer.balance.replace('$','').replace(',','')
+        //console.log(bal)
+        return Number(bal)//only work if the $ is removed
+    })
+    //console.log(nums)
+    let sum = _.reduce(nums, function(total, number){
+        return total+number
+    }, 0)
+    //console.log(sum)
+    return sum/customers.length
+};
 
 var firstLetterCount;
 
