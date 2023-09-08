@@ -76,7 +76,16 @@ var averageBalance = function (array){
     return sum/customers.length
 };
 
-var firstLetterCount;
+var firstLetterCount = function(array, letter){
+    //Use _.plack to get the "name" property from the customers array
+    let names = _.pluck(array,'name')
+    let filt = _.filter(names, function(name){
+        console.log({name,letter})
+        //Compare the letter the first letter of name and changing the case to be the same
+        return name.substring(0,1) === letter.toUpperCase()
+    }).length
+    return filt
+};
 
 var friendFirstLetterCount;
 
