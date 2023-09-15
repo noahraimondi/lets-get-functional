@@ -80,20 +80,93 @@ var firstLetterCount = function(array, letter){
     //Use _.plack to get the "name" property from the customers array
     let names = _.pluck(array,'name')
     let filt = _.filter(names, function(name){
-        console.log({name,letter})
+        //console.log({name,letter})
         //Compare the letter the first letter of name and changing the case to be the same
         return name.substring(0,1) === letter.toUpperCase()
     }).length
     return filt
 };
 
-var friendFirstLetterCount;
+var friendFirstLetterCount = function(array, customer, letter){
+  var count = 0;//Amount of freinds when looked for letter
+  for (var obj of array) {
+    if (obj.name.toLowerCase() === customer.toLowerCase()) {
+      for (var friend of obj.friends) {
+        var name = friend.name.toLowerCase();
+        if (name[0] === letter.toLowerCase()) {
+          count++;// increase count when freind of cust has the looked for letter
+        }
+      }
+    }
+  }
+  return count;
+};
 
-var friendsCount;
 
-var topThreeTags;
+var friendsCount = function(array,name){
+  var count = [];//the amount of x
+  if (!name) {
+    return count;
+  }
+  var result = _.map(array, function (customer) {
+    for (var friend of customer.friends) {
+      var namefrd = friend.name.toLowerCase(); //name o freind
+      var looks = name.toLowerCase(); //looked for name
+      if (namefrd === looks) {
+        return customer.name;
+      }
+    }
+  })
+  for (var i = 0; i < result.length; i++) {
+    if (result[i] != undefined) {
+    count.push(result[i])
+    }
+  }
+  return count;//
+};
 
-var genderCount;
+
+var topThreeTags = function(array){
+  var arra = [];//Store the common tag
+  var top = 0;//Most common tag 
+  var name = '';
+  var result = _.reduce(array, function (collect, current) {
+    //loop through the tags array
+    for (var tag of current.tags) {
+      if (collect[tag]) {
+        collect[tag] += 1;
+      } else {
+        collect[tag] = 1;
+      }
+    }
+    return collect;}, {})
+  //loop 3 times cause top three is wanted
+  for (let i = 0; i < 3; i++) {
+    for (let tag in result) {
+        if (top < result[tag]) {
+        top = result[tag]
+        name = tag;
+      }
+    }
+    arra.push(name)
+    delete result[name];
+    name = '';
+    top = 0;
+  }
+  return arra;//returning the top three tags
+};
+
+var genderCount = function(array){
+    var result = _.reduce(array, function (collect, current) {
+        if (collect[current.gender]) {
+        collect[current.gender] += 1;
+        } else {
+        collect[current.gender] = 1;
+        }
+        return collect;
+    }, {})
+  return result//returning the listed amount of genders in an object
+};
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
